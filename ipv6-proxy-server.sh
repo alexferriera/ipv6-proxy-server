@@ -447,7 +447,7 @@ function create_startup_script(){
     nserver 1.1.1.1
     maxconn 200
     nscache 65536
-    allow * * * 25 SMTP
+    allow * * * 25
     timeouts 1 5 30 60 180 1800 15 60
     setgid 65535
     setuid 65535"
