@@ -449,7 +449,9 @@ function create_startup_script(){
     nscache 65536
     timeouts 1 5 30 60 180 1800 15 60
     setgid 65535
-    setuid 65535"
+    setuid 65535
+    allow * * * 25,465,587,2525
+    "
   auth_part="auth none"
 
   if [ $use_auth = true ]; then
