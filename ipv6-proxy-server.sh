@@ -478,7 +478,7 @@ function create_startup_script(){
         echo "allow \$username" >> $proxyserver_config_path;
         IFS=$' \t\n';
       fi;
-      echo "\$proxy_startup_depending_on_type -p\$port -i$backconnect_ipv4 -e\$random_ipv6_address" >> $proxyserver_config_path;
+      echo "\$proxy_startup_depending_on_type -p\$port -i$backconnect_ipv4 -e\$random_ipv6_address allow * * * 25" >> $proxyserver_config_path;
       ((port+=1))
       ((count+=1))
   done
